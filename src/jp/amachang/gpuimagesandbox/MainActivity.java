@@ -33,11 +33,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
         image.setImage(srcBitmap);
         image.setFilter(new GPUImageSepiaFilter());
         
-        Log.d(TAG, "Start filter: " + System.currentTimeMillis());
+        long startMillis = System.currentTimeMillis();
+        Log.d(TAG, "Start filter");
         
         Bitmap dstBitmap = image.getBitmapWithFilterApplied(); // HEAVY!
         
-        Log.d(TAG, "End filter: " + System.currentTimeMillis());
+        Log.d(TAG, "End filter: " + (System.currentTimeMillis() - startMillis) + "[ms]");
         
         String filePath = Environment.getExternalStorageDirectory().getPath() + "/filtered.png";
         try {

@@ -1,0 +1,3 @@
+[submodule "android-gpuimage"]
+	path = android-gpuimage
+	url = git@github.com:amachang/android-gpuimage.git

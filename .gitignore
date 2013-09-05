@@ -1,3 +1,5 @@
+.DS_Store
+
 # built application files
 *.apk
 *.ap_
@@ -19,3 +21,11 @@ local.properties
 .classpath
 .project
 .settings/
+
+# gradle
+.gradle
+gradle
+build
+gradlew
+gradlew.bat
+
